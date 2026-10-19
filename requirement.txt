@@ -1,0 +1,15 @@
+# Runtime dependencies for 01_baseline/run_baseline.py.
+# Versions below match the relevant packages in the ENV Conda environment.
+# Tested with Python 3.10.20 and torch 2.1.2+cu118 (CUDA 11.8 build).
+#
+# Install the PyTorch wheel matching the machine before `pip install -r requirement.txt`:
+# CUDA 11.8: pip install torch==2.1.2 --index-url https://download.pytorch.org/whl/cu118
+# CPU only:   pip install torch==2.1.2 --index-url https://download.pytorch.org/whl/cpu
+# A CUDA-enabled wheel also requires a compatible NVIDIA driver. CUDA was not
+# available in the environment used for this audit, so GPU training was not tested.
+
+torch==2.1.2
+numpy==1.26.4
+scikit-learn==1.7.2
+tqdm==4.68.3
+matplotlib==3.10.9
